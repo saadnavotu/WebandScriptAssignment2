@@ -1,0 +1,168 @@
+<%-include ./partials/header.ejs %>
+<%-include ./partials/main_nav.ejs %>
+    <body>            
+        <!-- Portfolio Content -->
+            <main>
+                <!-- Home Section -->
+                <section id="home" class="home-section text-center">
+                    <div class="home-card mx-auto">
+                        <img src="/Asset/images/About_me_Picture.JPG" alt="Saad Nav" class="home-img">
+                        <h1 class="home-name">Saad Nav</h1>
+                        <p class="home-role">Networking & IT Security Student | Aspiring Cybersecurity Analyst</p>
+                        <div class="home-contact">
+                            <p><i class="fas fa-envelope"></i> saad.nav@ontariotechu.net</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Canada</p>
+                        </div>
+                        <div class="home-social">
+                            <a href="https://github.com/saadnavotu" target="_blank" class="text-white">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/saadnav" target="_blank" class="text-white">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                        </div>
+                        <p class="home-description mt-4">
+                            Passionate about cybersecurity and Information Technology. Constantly learning and building
+                            projects in networking, Web and Script Development, and ethical hacking.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- About Me Section -->
+                <section id="about">
+                    <main class="about-main">
+                        <h1 class="about-header">About Me</h1>
+                        <p class="about-subheader">A little about Saad</p>
+                        <div class="about-content">
+                            <img src="/Asset/images/About_me_Picture.JPG" alt="Photo of Saad" width="300"
+                                class="about-photo">
+                            <p class="about-description">
+                                Hello, my name is Saad, and I'm currently majoring in Networking and IT Security. Within
+                                the
+                                field I
+                                am passionate about Cybersecurity and currently developing my skills and interest in Web
+                                Development and Kali Linux. This portfolio showcases the projects and skills I have
+                                developed
+                                during my studies. Thank you for visiting my site, please feel free to explore my work
+                                and
+                                contact
+                                me if you have any questions.
+                            </p>
+                        </div>
+                        <div class="about-video-box">
+                            <video id="video" controls width="300" height="240" autoplay muted loop
+                                poster="/Asset/images/Network.jpg" preload="auto">
+                                <source src="/Asset/images/videos/IntroductionWeb_video.mp4" type="video/mp4">
+                                <source src="/Asset/images/videos/IntroductionWeb_video.ogv" type="video/ogv">
+                            </video>
+                            <br>
+                            <button onclick="playPause()">Play or Pause the video</button>
+                        </div>
+                    </main>
+                </section>
+
+                <!-- Projects Section -->
+                <section id="projects">
+                    <h1>Projects</h1>
+                    <section>
+                        <h2>Course Projects/Assignments</h2>
+                        <div class="project-slider">
+                            <button class="slide-arrow" id="slideLeft"><i class="fas fa-chevron-left"></i></button>
+                            <div class="project-cards">
+                                <article class="project-card active">
+                                    <h2>INFR 1421U - Introduction to Networking 2 Project</h2>
+                                    <aside><time datetime="2025-01-01">January 2025 - April 2025</time></aside>
+                                    <p>This final project during my first year winter semester introduces key networking
+                                        concepts,
+                                        covering fundamental protocols, network architecture, and tools utilized in
+                                        modern
+                                        networking
+                                        environments. This project allowed us to get hands on with networking protocols
+                                        and
+                                        configure
+                                        them in routers and switches.</p>
+                                </article>
+                                <article class="project-card">
+                                    <h2>BUSI 1030U - Writing and Critical Thinking Essay Assignment</h2>
+                                    <aside><time datetime="2024-10-05">Oct. 5 - 10, 2024</time></aside>
+                                    <p>This assignment was a essay, and the topic was on if AI, artificial intelligence
+                                        would
+                                        take
+                                        over
+                                        majority of employment in the near future</p>
+                                </article>
+                                <article class="project-card">
+                                    <h2>INFR1010U - Introduction to Statistics Assignment</h2>
+                                    <aside><time datetime="2024-10-02">Oct. 2 - 5, 2025</time></aside>
+                                    <p>This assignment focused on introductory statistics concepts, including
+                                        calculations
+                                        of
+                                        variance,
+                                        law of total probability, and Bayes Theorem. The assignment also included a
+                                        health
+                                        coverage
+                                        survey statistical summary.</p>
+                                </article>
+                                <article class="project-card">
+                                    <h2>INFR 2810U - Computer Architecture Assignment</h2>
+                                    <aside><time datetime="2024-11-09">November 9, 2024</time></aside>
+                                    <p>This assignment covered bitwise operations and binary arithmetic, including long
+                                        multiplication
+                                        and restoring division algorithm. It included detailed step-by-step calculations
+                                        and
+                                        explanations.</p>
+                                </article>
+                            </div>
+                            <button class="slide-arrow" id="slideRight"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact">
+                    <div class="contact-main">
+                        <h1 id="contact-header">Contact Me</h1>
+                        <form action="mailto:saad.nav@ontariotechu.net?subject=Contact%20Me" enctype="text/plain"
+                            method="post" name="Contact Form">
+                            <p>
+                                <label for="Fullname">Full Name :</label>
+                                <input type="text" id="Fullname" name="name" size="40"
+                                    placeholder="Enter your full name" required>
+                            </p>
+                            <p>
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email" size="40"
+                                    placeholder="Enter your email address" required>
+                            </p>
+                            <p>
+                                <label for="cell">Cell Number # :</label>
+                                <input type="tel" id="cell" name="cell" placeholder="Enter your cell number" required>
+                            </p>
+                            <p>
+                                <label for="questions">Comments :</label>
+                                <textarea id="questions" name="questions" cols="60" rows="8"
+                                    placeholder="Any Questions or Concerns? Please let me know here."></textarea>
+                            </p>
+                            <div class="captcha-row">
+                                <h2>Captcha</h2>
+                                <div class="captcha-fields">
+                                    <p>
+                                        <input type="number" id="a" name="a" value="0"> + <input type="number" id="b"
+                                            name="b" value="0"> = <output name="x" for="a b"></output>
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                            <input type="submit" value="Submit" class="submit-button">
+                        </form>
+                        <br>
+                    </div>
+                </section>
+            </main>
+            <!-- arrow scroll up fontawesome-->
+            <button id="scrollTopBtn" title="Go to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+    </body>
+    </html>
+<%-include ./partials/footer.ejs %>
