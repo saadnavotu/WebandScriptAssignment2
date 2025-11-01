@@ -1,15 +1,20 @@
+<!-- shared header and bootstrap navbar for neatness -->
 <%-include ./partials/header.ejs %>
 <%-include ./partials/main_nav.ejs %>
     <body>            
         <!-- Portfolio Content -->
             <main>
-                <!-- Home Section -->
+                <!-- used classes for easier CSS and JS styling and functionality -->
+                <!-- Home Section from Assignment 1-->
+                 <!-- text-center bootstrap CSS framework -->
                 <section id="home" class="home-section text-center">
+                    <!-- mx-auto bootstrap CSS framework -->
                     <div class="home-card mx-auto">
                         <img src="/Asset/images/About_me_Picture.JPG" alt="Saad Nav" class="home-img">
                         <h1 class="home-name">Saad Nav</h1>
                         <p class="home-role">Networking & IT Security Student | Aspiring Cybersecurity Analyst</p>
                         <div class="home-contact">
+                            <!-- more fontawesome for home card -->
                             <p><i class="fas fa-envelope"></i> saad.nav@ontariotechu.net</p>
                             <p><i class="fas fa-map-marker-alt"></i> Canada</p>
                         </div>
@@ -28,7 +33,7 @@
                     </div>
                 </section>
 
-                <!-- About Me Section -->
+                <!-- About Me Section from Assignment 1-->
                 <section id="about">
                     <main class="about-main">
                         <h1 class="about-header">About Me</h1>
@@ -61,14 +66,16 @@
                     </main>
                 </section>
 
-                <!-- Projects Section -->
+                <!-- Projects Section from Assignment 1-->
                 <section id="projects">
                     <h1>Projects</h1>
                     <section>
                         <h2>Course Projects/Assignments</h2>
                         <div class="project-slider">
+                            <!-- left arrow visibility for JS feature -->
                             <button class="slide-arrow" id="slideLeft"><i class="fas fa-chevron-left"></i></button>
                             <div class="project-cards">
+                                <!-- active bootstrap CSS framework -->
                                 <article class="project-card active">
                                     <h2>INFR 1421U - Introduction to Networking 2 Project</h2>
                                     <aside><time datetime="2025-01-01">January 2025 - April 2025</time></aside>
@@ -113,12 +120,13 @@
                                         explanations.</p>
                                 </article>
                             </div>
+                            <!-- right arrow visibility for JS feature -->
                             <button class="slide-arrow" id="slideRight"><i class="fas fa-chevron-right"></i></button>
                         </div>
                     </section>
                 </section>
 
-                <!-- Contact Section -->
+                <!-- Contact Section from Assignment 1-->
                 <section id="contact">
                     <div class="contact-main">
                         <h1 id="contact-header">Contact Me</h1>
@@ -165,4 +173,5 @@
             </button>
     </body>
     </html>
+<!-- shared footer from partials folder, for neatness -->
 <%-include ./partials/footer.ejs %>

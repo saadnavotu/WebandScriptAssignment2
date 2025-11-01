@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // home card animation
 document.addEventListener("DOMContentLoaded", function () {
-    // Home card animation
+    // Home card animation ease in animation when page loaded
     const homeCard = document.querySelector(".home-card");
     if (homeCard) {
         homeCard.style.opacity = 0;
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const rightBtn = document.getElementById('slideRight');
     let current = 0;
 
-    // project number functionality
+    // What project is active functionality
     function showCard(index) {
         cards.forEach((c, i) => c.classList.remove('active'));
         if (cards[index]) {
